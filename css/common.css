@@ -59,31 +59,6 @@
 .navbar-nav>li>a:hover{
 	color: #428bca;
 }
-.header .navbar-nav>li.solution .solution-menu {
-    margin-top: 9px;
-    padding: 0 0 5px;
-    text-align: center;
-    background-color: rgba(255,255,255,.97);
-    border-radius: 0 0 3px 3px;
-    box-shadow: 0 7px 21px rgba(0,0,0,.1);
-}
-
-.navbar-nav>li.solution .solution-menu>li>a {
-    color: #000;
-}
-.navbar-nav>li.solution .solution-menu>li>a:hover {
-    color: #428bca;
-}
-
-.header .navbar-nav>li.solution a.solution-switch:hover{
-	background-color: rgba(255,255,255,0.2);
-}
-.header .navbar-nav>li.solution .solution-menu a {
-    display: block;
-    font-size: 16px;
-    padding: 6px 0;
-    line-height: 20px;
-}
 
 .navbar-button>li>a.login {
     border: 1px solid #000000;
@@ -91,6 +66,7 @@
     margin: 9px 0 9px 10px;
     padding: 5px 20px;
     border-radius: 2px;
+    transition: all 0.5s;
 }
 .header .navbar-button>li>a.login:hover{
     border: 1px solid #383838;
@@ -176,31 +152,75 @@
     margin-bottom: 0;
 	overflow: hidden;
 }
-.site-footer .footer-nav .nav-group {
-    float: left;
-    color: #777;
-    width: 20%;
+.footer-nav .left{
+	width: 250px;
+	display: inline-block;
 }
-.site-footer .footer-nav .nav-group h4 {
-    color: #d9d9d9;
-    margin-bottom: 20px;
+
+.footer-nav .left h4,
+.footer-nav .left p{
+	margin-bottom: 28px;
 }
-.site-footer .footer-nav .nav-group>li {
-    margin-bottom: 20px;
+.footer-nav .left h4{
+	color: #ededed;
 }
-.site-footer .footer-nav .nav-group>li .small>a, 
-.site-footer .footer-nav .nav-group>li>a {
-    text-decoration: none;
-    color: #777;
+.footer-nav .left p{
+	color: #777;
 }
-.site-footer .footer-nav .nav-group>li .small>a:hover, 
-.site-footer .footer-nav .nav-group>li>a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
+.footer-nav .left p:hover{
+	color: #FFFFFF;
+	cursor: pointer;
+	transition: all 0.5s; 
 }
-.site-footer .footer-nav .nav-group>li .small {
-    display: block;
+.footer-nav .left p span{
+	display: block;
+	text-indent: 3em;
 }
+.footer-nav .right{
+	width: 745px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 27px;
+	padding-left: 100px;
+}
+.footer-nav .right .right-item{
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+}
+.footer-nav .right .m-place{
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+}
+.footer-nav .right .rwm1{
+	background: url(../img/erwm1.jpg) no-repeat;
+}
+.footer-nav .right .rwm2{
+	background: url(../img/erwm2.jpg) no-repeat;
+}
+.footer-nav .right .rwm3{
+	background: url(../img/erwm3.jpg) no-repeat;
+}
+.footer-nav .right .right-item .icon-place{
+	display:block;
+	margin: 20px  auto 8px;
+	width: 43px;
+	height: 43px;
+}
+.footer-nav .right .right-item .sb-icon1{
+	background: url(../img/wx-icon.png) no-repeat;
+	background-position: center;
+}
+.footer-nav .right .right-item .sb-icon2{
+	background: url(../img/ip-icon.png) no-repeat;
+	background-position: center;
+}
+.footer-nav .right .right-item .sb-icon3{
+	background: url(../img/adz-icon.png) no-repeat;
+	background-position: center;
+}
+/*版权样式*/
 .site-footer .copyright {
     background-color: #000;
     min-height: 70px;

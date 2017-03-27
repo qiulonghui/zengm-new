@@ -46,3 +46,14 @@
 	color: #000000;
 	margin-top: 65px;
 }
+.content .txt-cont:first-of-type{
+	margin-top: 80px;
+	
+}
+.content .txt-cont{
+	color: #868686;
+	font-size: 16px;
+	text-indent: 2em;
+	line-height: 1.8;
+}
+ 

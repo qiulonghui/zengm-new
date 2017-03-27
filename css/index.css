@@ -15,23 +15,15 @@ body{
 .transparent .navbar-brand{
 	background-image: url(../img/logo-white.png);
 }
-.transparent .navbar-nav>li.solution .solution-menu {
-	 margin-top: 0px;
-    background-color: rgba(255,255,255,0);
-}
-.transparent .navbar-nav>li.solution .solution-menu>li:hover{
-	background-color: rgba(255,255,255,0.2);
-}
-.transparent .navbar-nav>li.solution .solution-menu>li>a {
-    color: #FFF;
-}
 .transparent .navbar-button>li>a.login:hover {
+    border: 1px solid #FFFFFF;
     background-color: #FFFFFF;
     color: #03A9F4;
 }
 .transparent .navbar-button>li>a.login {
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
+    transition: all 0.5s;
 }
 .transparent .navbar-nav>li>a,
 .transparent .navbar-button .my-class{
@@ -83,7 +75,9 @@ body{
     font-size: 18px;
     z-index: 2;
     border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;  
+    border-bottom-right-radius: 0px; 
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;  
 }
 .jumbotron .container .input-button-group .free-signup{
 	height: 46px;
@@ -93,11 +87,26 @@ body{
 	left:-4px;
 	border-radius: 0px;
 	background-color: #03A9F4;
-	border-color:  #03A9F4;;
+	border-color:  #03A9F4;
+ 	border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px; 
 } 
-.page-index .jumbotron .container .input-button-group {
+.jumbotron .container .input-button-group {
     display: inline-table;
     transform: translateY(2px);
+}
+.jumbotron .container .big-login{
+	position: relative;
+	top: 2px;
+	z-index: 2;
+	padding: 10px 36px;
+	color: #03A9F4;
+    border: 1px solid #FFF;
+    background-color: #FFFFFF;
+    margin-left: 8px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: all 0.5s;
 }
 
 .carousel-inner,
@@ -218,97 +227,4 @@ body{
 .ghost_wrap{
 	text-align: center;
 	margin-top: 20px;
-}
-.site-footer {
-	min-width: 1000px;
-    background-color: #333;
-    color: #fff;
-}
-.site-footer .container{
-	width: 1000px;
-	padding: 0;
-}
-.site-footer .footer-nav {
-    padding: 30px 0 10px;
-    margin-left: 0;
-    margin-bottom: 0;
-	overflow: hidden;
-}
-.site-footer .footer-nav .nav-group {
-    float: left;
-    color: #777;
-    width: 20%;
-}
-.site-footer .footer-nav .nav-group h4 {
-    color: #d9d9d9;
-    margin-bottom: 20px;
-}
-.site-footer .footer-nav .nav-group>li {
-    margin-bottom: 20px;
-}
-.site-footer .footer-nav .nav-group>li .small>a, 
-.site-footer .footer-nav .nav-group>li>a {
-    text-decoration: none;
-    color: #777;
-}
-.site-footer .footer-nav .nav-group>li .small>a:hover, 
-.site-footer .footer-nav .nav-group>li>a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-.site-footer .footer-nav .nav-group>li .small {
-    display: block;
-}
-.site-footer .copyright {
-    background-color: #000;
-    min-height: 70px;
-}
-.page-index .container {
-    width: 1000px;
-}
-.site-footer .copyright .text, .site-footer .copyright .text a {
-    color: #a6a6a6;
-}
-.site-footer .copyright .text {
-    display: block;
-    float: left;
-    font-size: 16px;
-    padding: 24px 0;
-}
-.site-footer .copyright .sns-info {
-    float: right;
-    margin: 15px 0;
-}
-.site-footer .copyright .sns-info>a.icon.icon-wechat {
-    position: relative;
-}
-.site-footer .copyright .sns-info>a.icon.icon-wechat .pop {
-    display: none;
-    position: absolute;
-    top: -210px;
-    left: -56px;
-    width: 150px;
-    height: 205px;
-    padding: 20px 10px;
-    border: 1px solid #d5d8dd;
-    background-color: #FFF;
-    text-align: center;
-    box-shadow: 0 1px 6px rgba(0,0,0,.15);
-}
-.site-footer .copyright .sns-info>a.icon .pop {
-    font-size: 14px;
-    line-height: 20px;
-}
-.site-footer .copyright .sns-info>a.icon {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    font-size: 22px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    cursor: pointer;
-    -webkit-transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
 }
